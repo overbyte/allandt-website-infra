@@ -5,7 +5,7 @@ module "website" {
   source = "./modules/static-website"
 
   name = "${local.namespace_dash}-website"
-  fqdn = "${var.workspace}.wearebulletproof.com"
+  fqdn = "${var.workspace}.allandt.com"
   disable_ttl = var.workspace == "production" ? false : true
 
   lambdas = [
